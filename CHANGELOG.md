@@ -4,6 +4,6 @@ All notable changes to the "migrate-me" extension will be documented in this fil
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## [Unreleased]
+## [Released]
 
-- Initial release
+-   Initial release, version 0.1.0

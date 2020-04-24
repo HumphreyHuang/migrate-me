@@ -1,14 +1,23 @@
 {
     "name": "migrate-me",
     "displayName": "Migrate Me",
-    "description": "",
-    "version": "0.0.1",
+    "description": "A Migration Extension for Developers in MB3",
+    "version": "0.1.0",
+    "author": {
+        "name": "humphreyhuang"
+    },
+    "publisher": "Humphrey-Huang",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/HumphreyHuang/migrate-me"
+    },
     "engines": {
-        "vscode": "^1.44.0"
+        "vscode": "^1.42.1"
     },
     "categories": [
         "Other"
     ],
+    "icon": "images/icon.png",
     "activationEvents": [
         "onCommand:explorer.migrateme",
         "onCommand:editor.migrateme"
