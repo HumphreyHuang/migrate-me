@@ -1,0 +1,75 @@
+{
+    "name": "migrate-me",
+    "displayName": "Migrate Me",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.44.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:explorer.migrateme",
+        "onCommand:editor.migrateme"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "explorer.migrateme",
+                "title": "Migrate Me 🤓"
+            },
+            {
+                "command": "editor.migrateme",
+                "title": "Migrate Me 🤓"
+            }
+        ],
+        "menus": {
+            "explorer/context": [
+                {
+                    "command": "explorer.migrateme",
+                    "when": "resourceExtname == .sql"
+                }
+            ],
+            "editor/context": [
+                {
+                    "command": "editor.migrateme",
+                    "when": "editorTextFocus && resourceExtname == .sql"
+                },
+                {
+                    "command": "editor.migrateme",
+                    "when": "editorTextFocus && resourceExtname == .js"
+                }
+            ],
+            "commandPalette": [
+                {
+                    "command": "editor.migrateme",
+                    "when": "false"
+                }
+            ]
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "lint": "eslint src --ext ts",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile && npm run lint",
+        "test": "node ./out/test/runTest.js"
+    },
+    "devDependencies": {
+        "@types/glob": "^7.1.1",
+        "@types/mocha": "^7.0.2",
+        "@types/node": "^13.11.0",
+        "@types/vscode": "^1.44.0",
+        "@typescript-eslint/eslint-plugin": "^2.26.0",
+        "@typescript-eslint/parser": "^2.26.0",
+        "eslint": "^6.8.0",
+        "glob": "^7.1.6",
+        "mocha": "^7.1.1",
+        "prettier": "2.0.5",
+        "typescript": "^3.8.3",
+        "vscode-test": "^1.3.0"
+    }
+}
