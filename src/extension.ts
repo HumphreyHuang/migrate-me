@@ -87,7 +87,7 @@ function ensureTerminalExists() {
     let t;
 
     const currentTerminal = (<any>vscode.window).terminals.filter(
-        (t: any) => t._name === 'migration'
+        (t: any) => t.name === 'migration'
     );
 
     if (
