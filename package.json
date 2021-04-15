@@ -2,7 +2,7 @@
     "name": "migrate-me",
     "displayName": "Migrate Me",
     "description": "A Migration Extension for Developers in MB3",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "author": {
         "name": "humphreyhuang"
     },
@@ -12,7 +12,7 @@
         "url": "https://github.com/HumphreyHuang/migrate-me"
     },
     "engines": {
-        "vscode": "^1.42.1"
+        "vscode": "^1.55.2"
     },
     "categories": [
         "Other"
